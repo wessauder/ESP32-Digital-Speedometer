@@ -1,10 +1,10 @@
 # ESP32-Digital-Speedometer
 Utilizes a tinyGPS++ to report speed in MPH to a locally hosted webpage. Additionally, the webpage contains buttons to control digital outputs on the ESP32
 
-System Components:
-1 GPS Module 
-1 ESP32  
-1 Web interface  
+System Components:  
+1 GPS Module   
+1 ESP32    
+1 Web interface    
 
 This project combines GPS speed measurement with a web-based control dashboard. The ESP32 acts as both the data processor and the WiFi access point. A GPS module continuously feeds data into the ESP32 over a dedicated UART. The TinyGPS++ library decodes this data and extracts speed (in miles per hour) and satellite validity. If a valid signal is present, the current speed is calculated and stored. At the same time, the ESP32 hosts a HTTP server. Any device connected to the ESP32’s access point can open the dashboard in a web browser. The dashboard provides:
 
